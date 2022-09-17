@@ -38,7 +38,7 @@ section {
 }
 
 .about {
-  min-height: 300px;
+  min-height: auto;
 }
 
 .pKiri,
