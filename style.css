@@ -40,6 +40,7 @@ section {
 .about {
   min-height: fit-content;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .pKiri,
