@@ -204,11 +204,11 @@
               <label for="telp">No Telepon</label>
               <input type="telp" id="telp" class="form-control" placeholder="masukkan no telepon">
             </div>
-            <select class="form-control">
+            <select id="category" class="form-control">
               <option>-- Pilih Kategori --</option>
-              <option>Web Design</option>
-              <option>Web Development</option>
-              <option>Yang Lain</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Web Dev">Web Development</option>
+              <option value="Other">Yang Lain</option>
             </select>
             <div class="form-group">
               <label for="pesan">Pesan</label>
@@ -217,8 +217,17 @@
             <button onclick="submitMessage();" type="button" class="btn btn-primary">Kirim Pesan</button>
             <script>
               function submitMessage() {
+                nama_ = document.getElementById("nama");
+                email_ = document.getElementById("email");
+                telp_ = document.getElementById("telp");
+                category_ = document.getElementById("category");
                 text_ = document.getElementById("contentMessage");
-                window.location.href = 'https://wa.me/6282134814942?text=' + text_.value;
+                message_ = "Nama : " + nama_.value;
+                message_ += "\nEmail : " + email_.value;
+                message_ += "\nNo. : " + telp_.value;
+                message_ += "\nCategory : " + category_.value;
+                message_ += "\n\n" + text_.value;
+                window.location.href = 'https://wa.me/6282134814942?text=' + message_;
               }
             </script>
 
