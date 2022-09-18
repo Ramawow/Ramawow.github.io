@@ -212,9 +212,15 @@
             </select>
             <div class="form-group">
               <label for="pesan">Pesan</label>
-              <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
+              <textarea id="contentMessage" class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
             </div>
-            <a href="https://wa.me/6287834703233?text=" type="submit" class="btn btn-primary">Kirim Pesan</a>
+            <button onclick="submitMessage();" type="button" class="btn btn-primary">Kirim Pesan</button>
+            <script>
+              function submitMessage() {
+                text_ = document.getElementById("contentMessage");
+                window.location.href = 'https://wa.me/6282134814982?text=' + text_.value;
+              }
+            </script>
 
           </form>
         </div>
