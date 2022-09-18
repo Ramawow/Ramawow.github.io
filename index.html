@@ -223,10 +223,10 @@
                 category_ = document.getElementById("category");
                 text_ = document.getElementById("contentMessage");
                 message_ = "Nama : " + nama_.value;
-                message_ += "\nEmail : " + email_.value;
-                message_ += "\nNo. : " + telp_.value;
-                message_ += "\nCategory : " + category_.value;
-                message_ += "\n\n" + text_.value;
+                message_ += "%0AEmail : " + email_.value;
+                message_ += "%0ANo. : " + telp_.value;
+                message_ += "%0ACategory : " + category_.value;
+                message_ += "%0A%0A" + text_.value;
                 window.location.href = 'https://wa.me/6282134814942?text=' + message_;
               }
             </script>
