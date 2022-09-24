@@ -93,6 +93,16 @@ footer p {
   font-size: 0.9em;
 }
 
+footer a {
+  color: #eee;
+  list-style: none;
+}
+
+footer a:hover {
+  color: limegreen;
+  list-style: none;
+}
+
 footer p i {
   color: salmon;
 }
