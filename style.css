@@ -101,6 +101,7 @@ footer a {
 footer a:hover {
   color: limegreen;
   list-style: none;
+  text-decoration: none;
 }
 
 footer p i {
